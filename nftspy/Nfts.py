@@ -3,9 +3,9 @@ import os
 import shutil
 
 def processar_csv(
-    caminho_csv = "C:\\Users\\jhosephethierry\\Documents\\Bird\\python\\nftspy\\metadata.csv", 
-    pasta_balls = "C:\\Users\\jhosephethierry\\Documents\\Bird\\python\\nftspy\\webp", 
-    pasta_nfts = "C:\\Users\\jhosephethierry\\Documents\\Bird\\python\\nftspy\\nfts"
+    caminho_csv = "C:\\Users\\jhosephethierry\\Documents\\Bird\\python-1\\nftspy\\metadata.csv", 
+    pasta_balls = "C:\\Users\\jhosephethierry\\Documents\\Bird\\python-1\\nftspy\\webp", 
+    pasta_nfts = "C:\\Users\\jhosephethierry\\Documents\\Bird\\python-1\\nftspy\\nfts"
     ):
     """
     Processa um arquivo CSV, copiando arquivos de vídeo com base na raridade.
