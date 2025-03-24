@@ -4,7 +4,7 @@ import shutil
 
 def processar_csv(
     caminho_csv = "C:\\Users\\jhosephethierry\\Documents\\Bird\\python\\nftspy\\metadata.csv", 
-    pasta_balls = "C:\\Users\\jhosephethierry\\Documents\\Bird\\python\\nftspy\\balls", 
+    pasta_balls = "C:\\Users\\jhosephethierry\\Documents\\Bird\\python\\nftspy\\webp", 
     pasta_nfts = "C:\\Users\\jhosephethierry\\Documents\\Bird\\python\\nftspy\\nfts"
     ):
     """
@@ -31,14 +31,14 @@ def processar_csv(
                     print(f"Aviso: Linha com tokenId ou Rarity faltando: {linha}")
                     continue # Pula para a proxima iteração
 
-                nome_arquivo_origem = f"{raridade}.mp4"
+                nome_arquivo_origem = f"{raridade}.webp"
                 caminho_origem = os.path.join(pasta_balls, nome_arquivo_origem)
 
                 if not os.path.exists(caminho_origem):
                     print(f"Aviso: Arquivo não encontrado: {caminho_origem}")
                     continue # Pula para a proxima iteração
 
-                nome_arquivo_destino = f"Mr Beans Ball {token_id.zfill(4)} {raridade}.mp4"
+                nome_arquivo_destino = f"Stone {token_id.zfill(4)} {raridade}.webp"
                 caminho_destino = os.path.join(pasta_nfts, nome_arquivo_destino)
 
                 try:
